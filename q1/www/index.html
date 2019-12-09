@@ -4,13 +4,124 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FakeStagram</title>
+  <title>Fake Instagram</title>
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script type="text/javascript" src="js/app.js"></script>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+  <div class="desktop">
+  <div id="overlay">
+    <div id="exit" class="fa fa-times fa-3x" onclick="off()">
+    </div>
+    <div id="insideoverlay">
+      <div id="picture">
+        <img class="img3" src="" alt="Clicked on Image" id="myImage">
+      </div>
+      <div id="upright">
+        <div id="comment_img">
+          <img src="img/avatar.jpg" alt="logo" class="img4">
+        </div>
+        <div id="comment">
+          <p class="p2"><strong>Username </strong>Lorem ipsum dolor sit amet.</p>
+          <div id="timeunder">
+            <p class="p2">12 minutes ago    Reply</p>
+          </div>
+        </div>
+        <hr>
+        <div id="comment_img">
+          <img src="img/avatar.jpg" alt="logo" class="img4">
+        </div>
+        <div id="comment">
+          <p class="p2"><strong>Username </strong>Lorem ipsum dolor sit amet.</p>
+          <div id="timeunder">
+            <p class="p2">12 minutes ago    Reply</p>
+          </div>
+        </div>
+        <div id="comment_img">
+          <img src="img/avatar.jpg" alt="logo" class="img4">
+        </div>
+        <div id="comment">
+          <p class="p2"><strong>Username </strong>Lorem ipsum dolor sit amet.</p>
+          <div id="timeunder">
+            <p class="p2">12 minutes ago    Reply</p>
+          </div>
+        </div>
+      </div>
+      <div id="bottomright">
+        <hr>
+        <div id="heart" class="fa fa-heart-o fa-2x">
+
+        </div>
+        <div id="comm" class="fa fa-comment-o fa-2x">
+
+        </div>
+        <div id="share" class="fa fa-share-square-o fa-2x">
+
+        </div>
+        <div id="bookmark" class="fa fa-bookmark-o fa-2x">
+
+        </div>
+        <div id="likes">
+          <p class="p1">226 Likes</p>
+        </div>
+        <div id="time">
+          <p class="p2">18 Minutes ago</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="mobile">
+    <div id="overlaym" onclick="off()">
+      <div id="middle">
+        <div id="top">
+          <div id="profile">
+            <img src="img/avatar.jpg" alt="logo" class="img4">
+          </div>
+          <div id="username">
+            <br>
+            <p><strong>Some_random_user</strong></p>
+          </div>
+          <div id="location">
+            <p>Japan</p>
+          </div>
+        </div>
+        <div id="imagem">
+          <div id="innerimage">
+            <div id="spacing">
+            </div>
+            <img class="img5" src="" alt="Clicked on Image" id="myImagem">
+            <div id="spacing">
+            </div>
+          </div>
+        </div>
+        <div id="bottom">
+          <div id="bottom_top">
+          <div id="heart" class="fa fa-heart-o fa-2x">
+          </div>
+          <div id="commentm" class="fa fa-comment-o fa-2x">
+          </div>
+          <div id="share" class="fa fa-share-square-o fa-2x">
+          </div>
+          <div id="bookmark" class="fa fa-bookmark-o fa-2x">
+          </div>
+            </div>
+            <div id="likes">
+              <p><strong>531 likes</strong></p>
+            </div>
+            <br>
+            <br>
+            <div id="time">
+              <p>39 minutes ago</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="row">
     <div class="divlogo">
       <img class="img1" src="img/avatar.jpg" alt="logo">
@@ -23,49 +134,49 @@
     </div>
 
     <div class="column">
-      <img class="img2" src="img/1.jpg" alt="sunflower">
+      <img class="img2" src="img/1.jpg" alt="sunflower" onclick="on('img/1.jpg')">
     </div>
     <div class="column">
-      <img class="img2" src="img/2.jpg" alt="cloudy lake">
+      <img class="img2" src="img/2.jpg" alt="cloudy lake" onclick="on('img/2.jpg')">
     </div>
     <div class="column">
-      <img class="img2" src="img/3.jpg" alt="red flowers">
+      <img class="img2" src="img/3.jpg" alt="red flowers"onclick="on('img/3.jpg')">
     </div>
     <div class="column">
-      <img class="img2" src="img/5.jpg" alt="looking up at trees">
+      <img class="img2" src="img/5.jpg" alt="looking up at trees"onclick="on('img/5.jpg')">
     </div>
     <div class="column">
-      <img class="img2" src="img/6.jpg" alt="lake">
+      <img class="img2" src="img/6.jpg" alt="lake"onclick="on('img/6.jpg')">
     </div>
     <div class="column">
-      <img class="img2" src="img/7.jpg" alt="green plant">
+      <img class="img2" src="img/7.jpg" alt="green plant"onclick="on('img/7.jpg')">
     </div>
     <div class="column">
-      <img class="img2" src="img/8.jpg" alt="trail">
+      <img class="img2" src="img/8.jpg" alt="trail"onclick="on('img/8.jpg')">
     </div>
     <div class="column">
-      <img class="img2" src="img/9.jpg" alt="window">
+      <img class="img2" src="img/9.jpg" alt="window"onclick="on('img/9.jpg')">
     </div>
     <div class="column">
-      <img class="img2" src="img/10.jpg" alt="forest">
+      <img class="img2" src="img/10.jpg" alt="forest"onclick="on('img/10.jpg')">
     </div>
     <div class="column">
-      <img class="img2" src="img/11.jpg" alt="trees">
+      <img class="img2" src="img/11.jpg" alt="trees"onclick="on('img/11.jpg')">
     </div>
     <div class="column">
-      <img class="img2" src="img/12.jpg" alt="waves">
+      <img class="img2" src="img/12.jpg" alt="waves"onclick="on('img/12.jpg')">
     </div>
     <div class="column">
-      <img class="img2" src="img/13.jpg" alt="fish">
+      <img class="img2" src="img/13.jpg" alt="fish"onclick="on('img/13.jpg')">
     </div>
     <div class="column">
-      <img class="img2" src="img/14.jpg" alt="bird and berries">
+      <img class="img2" src="img/14.jpg" alt="bird and berries"onclick="on('img/14.jpg')">
     </div>
     <div class="column">
-      <img class="img2" src="img/15.jpg" alt="bird blue">
+      <img class="img2" src="img/15.jpg" alt="bird blue"onclick="on('img/15.jpg')">
     </div>
     <div class="column">
-      <img class="img2" src="img/16.jpg" alt="waterfall">
+      <img class="img2" src="img/16.jpg" alt="waterfall"onclick="on('img/16.jpg')">
     </div>
   </div>
 
